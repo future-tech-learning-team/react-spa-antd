@@ -4,7 +4,9 @@
  */
 
 import * as todoMock from './todo'
+import * as studyInfo from './StudyInfo'
 
 export default {
     ...todoMock,
+    ...studyInfo,
 }

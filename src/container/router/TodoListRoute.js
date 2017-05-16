@@ -8,7 +8,7 @@ import TodoListContainer from '../TodoListContainer'
 
 const setRef = (component) => {
     if (component !== null) {
-        console.log(`component.getWrappedInstance() = `, component.getWrappedInstance())    // eslint-disable-line
+        console.log(`component.getWrappedInstance() = `, component)    // eslint-disable-line
     }
 }
 

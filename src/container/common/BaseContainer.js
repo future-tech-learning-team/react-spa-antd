@@ -40,10 +40,12 @@ class BaseContainer extends PureComponent {
                         </Col>
                     </Row>
                 </header>
-                <div className="content">
-                    {cloneElement(children, {
-                        key: location.pathname,
-                    })}
+                <div style={{margin: "0 50px",border: "1px solid #ccc","border-radius": "5px",}}>
+                    <div className="content" style={{ width: "540px",margin: "auto", }}>
+                        {cloneElement(children, {
+                            key: location.pathname,
+                        })}
+                    </div>
                 </div>
                 <footer className="act-mp-footer">
                     <span>©Copyright {(new Date()).getFullYear()} 学习小组</span>
