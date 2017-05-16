@@ -4,7 +4,9 @@
  */
 
 import * as todo from './todo'
+import * as LearningTarget from './LearningTarget'
 
 export default {
     todo,
+    LearningTarget,
 }

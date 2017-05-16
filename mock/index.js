@@ -4,7 +4,9 @@
  */
 
 import * as todoMock from './todo'
+import * as selectMock from './LearningTargetSelect'
 
 export default {
     ...todoMock,
+    ...selectMock,
 }

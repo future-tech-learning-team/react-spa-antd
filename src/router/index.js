@@ -8,6 +8,7 @@ import BaseRouteContainer from '../container/router/BaseRoute'
 import NoMatchContainer from '../container/common/NoMatchContainer'
 import TodoInfoRouteContainer from '../container/router/TodoInfoRoute'
 import TodoListRouteContainer from '../container/router/TodoListRoute'
+import LearningTargetRouteContainer from '../container/router/LearningTargetRoute'
 
 const noMatchRoute = {
     path: '*',
@@ -16,6 +17,10 @@ const noMatchRoute = {
 const TodoListRoute = {
     path: 'todo-list',
     component: TodoListRouteContainer,
+}
+const LearningTargetRoute = {
+    path: 'learning-target',
+    component: LearningTargetRouteContainer,
 }
 const TodoInfoRoute = {
     path: 'todo(/:id)',
@@ -26,9 +31,11 @@ const route = {
     path: '/',
     component: BaseRouteContainer,
     indexRoute: {
-        component: TodoListRouteContainer,
+        // component: TodoListRouteContainer,
+        component: LearningTargetRouteContainer,
     },
     childRoutes: [
+        LearningTargetRoute,
         TodoListRoute,
         TodoInfoRoute,
         noMatchRoute,
