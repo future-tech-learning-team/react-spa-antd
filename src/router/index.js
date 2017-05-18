@@ -28,7 +28,7 @@ const route = {
     component: BaseRouteContainer,
     indexRoute: {
         // component: TodoListRouteContainer,
-        component: StudyListRouteContainer,   // 1
+        component: StudyListRouteContainer,   //   1
     },
     childRoutes: [
         TodoListRoute,
