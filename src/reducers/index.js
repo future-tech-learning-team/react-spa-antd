@@ -6,9 +6,11 @@
 import { routerReducer, } from 'react-router-redux'
 import todo from './todo'
 import todoList from './todoList'
+import toStudyList from './toStudyList'
 
 export default {
     todo,
     todoList,
+    toStudyList,
     routing: routerReducer,
 }

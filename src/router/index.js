@@ -9,6 +9,7 @@ import NoMatchContainer from '../container/common/NoMatchContainer'
 import TodoInfoRouteContainer from '../container/router/TodoInfoRoute'
 import TodoListRouteContainer from '../container/router/TodoListRoute'
 
+import StudyListRouteContainer from '../container/router/studyListRoute' // 2
 const noMatchRoute = {
     path: '*',
     component: NoMatchContainer,
@@ -26,7 +27,8 @@ const route = {
     path: '/',
     component: BaseRouteContainer,
     indexRoute: {
-        component: TodoListRouteContainer,
+        // component: TodoListRouteContainer,
+        component: StudyListRouteContainer,   // 1
     },
     childRoutes: [
         TodoListRoute,

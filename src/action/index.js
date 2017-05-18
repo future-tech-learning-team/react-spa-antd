@@ -4,7 +4,9 @@
  */
 
 import * as todo from './todo'
+import * as toStudy from './toStudy'
 
 export default {
     todo,
+    toStudy,
 }
